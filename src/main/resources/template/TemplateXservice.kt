@@ -1,7 +1,5 @@
 package ${packageName}.xservice
 
-import com.zetafin.commons.biz.vo.DataTablePageVO
-
 interface ${beanName}Xservice {
 
     fun add(po: ${beanName}Po): ${beanName}Vo
