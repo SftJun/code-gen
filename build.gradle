@@ -1,5 +1,6 @@
 buildscript {
     ext.kotlin_version = '1.1.51'
+    ext.querydslVersion = '4.1.4'
 
     repositories {
         mavenCentral()
@@ -23,6 +24,9 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "com.querydsl:querydsl-jpa:$querydslVersion"
+    compile "com.querydsl:querydsl-core:$querydslVersion"
+    compile "com.querydsl:querydsl-sql:$querydslVersion"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
